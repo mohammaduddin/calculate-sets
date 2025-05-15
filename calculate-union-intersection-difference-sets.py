@@ -4,13 +4,14 @@
 # A = {1, 2, 3, 4, 5}
 # B = {4, 5, 6, 7, 8}
 
+# compute the sets of union, intersection and difference
 def set_operations(setA, setB):
 
     return{
          "union": setA | setB,
          "intersection": setA & setB,
-         "difference_setA_minus_setB": setA | setB,
-         "difference_setB_minus_setA": setB | setA
+         "difference_setA_minus_setB": setA - setB,
+         "difference_setB_minus_setA": setB - setA
     }   
 
 
@@ -38,9 +39,9 @@ print(f"Difference (SetB - SetA): {results['difference_setB_minus_setA']}")
 #OUTPUT:
 # Type 1st set, separated by commas: example(1,2,3,4,5):  1,2,3,4,5
 # Type 2nd set, separated by commas: example(4,5,6,7,8):  4,5,6,7,8
-# Set A: {'5', '2', '1', '4', '3'}
-# Set B: {'7', '5', '6', '8', '4'}
-# Union: {'7', '5', '6', '2', '1', '8', '4', '3'}
-# Intersection: {'5', '4'}
-# Difference (SetA - SetB): {'7', '5', '6', '2', '1', '8', '4', '3'}
-# Difference (SetB - SetA): {'7', '5', '6', '2', '8', '1', '4', '3'}
+# Set A: {'5', '2', '3', '1', '4'}
+# Set B: {'8', '7', '5', '6', '4'}
+# Union: {'8', '7', '4', '5', '2', '6', '1', '3'}
+# Intersection: {'4', '5'}
+# Difference (SetA - SetB): {'1', '2', '3'}
+# Difference (SetB - SetA): {'8', '6', '7'}

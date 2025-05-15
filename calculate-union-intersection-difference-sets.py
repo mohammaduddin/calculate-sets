@@ -36,13 +36,11 @@ print(f"Difference (SetB - SetA): {results['difference_setB_minus_setA']}")
 
 
 #OUTPUT:
-# Type 1st set, separated by commas: example  1,2,3,4,5:   1,2,3,4,5
-# Type 2nd set, separated by commas: example  4,5,6,7,8:   4,5,6,7,8
-
-# Set A: {'1,2,3,4,5'}
-# Set B: {'4,5,6,7,8'}
-
-# Union: {'1,2,3,4,5', '4,5,6,7,8'}
-# Intersection: set()
-# Difference (SetA - SetB): {'1,2,3,4,5', '4,5,6,7,8'}
-# Difference (SetB - SetA): {'4,5,6,7,8'}
+# Type 1st set, separated by commas: example(1,2,3,4,5):  1,2,3,4,5
+# Type 2nd set, separated by commas: example(4,5,6,7,8):  4,5,6,7,8
+# Set A: {'5', '2', '1', '4', '3'}
+# Set B: {'7', '5', '6', '8', '4'}
+# Union: {'7', '5', '6', '2', '1', '8', '4', '3'}
+# Intersection: {'5', '4'}
+# Difference (SetA - SetB): {'7', '5', '6', '2', '1', '8', '4', '3'}
+# Difference (SetB - SetA): {'7', '5', '6', '2', '8', '1', '4', '3'}
